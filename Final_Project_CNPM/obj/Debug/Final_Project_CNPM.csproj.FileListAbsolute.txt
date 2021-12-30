@@ -74,3 +74,5 @@ D:\Deadline\FinalCNPM\Code\Final_Project_CNPM\Final_Project_CNPM\obj\Debug\Final
 D:\Deadline\FinalCNPM\Code\Final_Project_CNPM\Final_Project_CNPM\obj\Debug\Final_Project_CNPM.csproj.CopyComplete
 D:\Deadline\FinalCNPM\Code\Final_Project_CNPM\Final_Project_CNPM\obj\Debug\Final_Project_CNPM.exe
 D:\Deadline\FinalCNPM\Code\Final_Project_CNPM\Final_Project_CNPM\obj\Debug\Final_Project_CNPM.pdb
+D:\Deadline\FinalCNPM\Code\Final_Project_CNPM\Final_Project_CNPM\bin\Debug\XanderUI.dll
+D:\Deadline\FinalCNPM\Code\Final_Project_CNPM\Final_Project_CNPM\obj\Debug\Final_Project_CNPM.Form1.resources
