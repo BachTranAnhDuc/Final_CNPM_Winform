@@ -102,7 +102,7 @@ namespace Final_Project_CNPM
             // usernameInput
             // 
             this.usernameInput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.usernameInput.Location = new System.Drawing.Point(230, 226);
+            this.usernameInput.Location = new System.Drawing.Point(230, 222);
             this.usernameInput.Name = "usernameInput";
             this.usernameInput.Size = new System.Drawing.Size(198, 32);
             this.usernameInput.TabIndex = 5;
@@ -110,7 +110,7 @@ namespace Final_Project_CNPM
             // passwordInput
             // 
             this.passwordInput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.passwordInput.Location = new System.Drawing.Point(230, 297);
+            this.passwordInput.Location = new System.Drawing.Point(230, 293);
             this.passwordInput.Name = "passwordInput";
             this.passwordInput.Size = new System.Drawing.Size(198, 32);
             this.passwordInput.TabIndex = 6;
