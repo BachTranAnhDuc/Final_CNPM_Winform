@@ -10,8 +10,6 @@
 
 #pragma warning disable 1591
 
-using System;
-
 namespace Final_Project_CNPM {
     
     
@@ -22,9 +20,9 @@ namespace Final_Project_CNPM {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("eShopManagerDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("eShopManagerDataSet1")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class eShopManagerDataSet : global::System.Data.DataSet {
+    public partial class eShopManagerDataSet1 : global::System.Data.DataSet {
         
         private wareHouseDataTable tablewareHouse;
         
@@ -32,7 +30,7 @@ namespace Final_Project_CNPM {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public eShopManagerDataSet() {
+        public eShopManagerDataSet1() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -43,7 +41,7 @@ namespace Final_Project_CNPM {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected eShopManagerDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected eShopManagerDataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -129,7 +127,7 @@ namespace Final_Project_CNPM {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            eShopManagerDataSet cln = ((eShopManagerDataSet)(base.Clone()));
+            eShopManagerDataSet1 cln = ((eShopManagerDataSet1)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -201,9 +199,9 @@ namespace Final_Project_CNPM {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "eShopManagerDataSet";
+            this.DataSetName = "eShopManagerDataSet1";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/eShopManagerDataSet.xsd";
+            this.Namespace = "http://tempuri.org/eShopManagerDataSet1.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tablewareHouse = new wareHouseDataTable();
@@ -227,7 +225,7 @@ namespace Final_Project_CNPM {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            eShopManagerDataSet ds = new eShopManagerDataSet();
+            eShopManagerDataSet1 ds = new eShopManagerDataSet1();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -290,6 +288,10 @@ namespace Final_Project_CNPM {
             private global::System.Data.DataColumn columnpriceIn;
             
             private global::System.Data.DataColumn columnpriceOut;
+            
+            private global::System.Data.DataColumn columncategoryName;
+            
+            private global::System.Data.DataColumn columnemployeeID;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -366,6 +368,22 @@ namespace Final_Project_CNPM {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn categoryNameColumn {
+                get {
+                    return this.columncategoryName;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn employeeIDColumn {
+                get {
+                    return this.columnemployeeID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -395,20 +413,22 @@ namespace Final_Project_CNPM {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void AddwareHouseRow(string text, string text1, wareHouseRow row) {
+            public void AddwareHouseRow(wareHouseRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public wareHouseRow AddwareHouseRow(string productID, string productName, int quantity, int priceIn, int priceOut, string text, string text1) {
+            public wareHouseRow AddwareHouseRow(string productID, string productName, int quantity, int priceIn, int priceOut, string categoryName, string employeeID) {
                 wareHouseRow rowwareHouseRow = ((wareHouseRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         productID,
                         productName,
                         quantity,
                         priceIn,
-                        priceOut};
+                        priceOut,
+                        categoryName,
+                        employeeID};
                 rowwareHouseRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowwareHouseRow);
                 return rowwareHouseRow;
@@ -443,6 +463,8 @@ namespace Final_Project_CNPM {
                 this.columnquantity = base.Columns["quantity"];
                 this.columnpriceIn = base.Columns["priceIn"];
                 this.columnpriceOut = base.Columns["priceOut"];
+                this.columncategoryName = base.Columns["categoryName"];
+                this.columnemployeeID = base.Columns["employeeID"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -458,12 +480,18 @@ namespace Final_Project_CNPM {
                 base.Columns.Add(this.columnpriceIn);
                 this.columnpriceOut = new global::System.Data.DataColumn("priceOut", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnpriceOut);
+                this.columncategoryName = new global::System.Data.DataColumn("categoryName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncategoryName);
+                this.columnemployeeID = new global::System.Data.DataColumn("employeeID", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnemployeeID);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnproductID}, true));
                 this.columnproductID.AllowDBNull = false;
                 this.columnproductID.Unique = true;
                 this.columnproductID.MaxLength = 20;
                 this.columnproductName.MaxLength = 100;
+                this.columncategoryName.MaxLength = 100;
+                this.columnemployeeID.MaxLength = 20;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -531,7 +559,7 @@ namespace Final_Project_CNPM {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                eShopManagerDataSet ds = new eShopManagerDataSet();
+                eShopManagerDataSet1 ds = new eShopManagerDataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -588,11 +616,6 @@ namespace Final_Project_CNPM {
                 xs.Add(dsSchema);
                 return type;
             }
-
-            internal wareHouseRow AddwareHouseRow(string text1, string text2, string text3, string text)
-            {
-                throw new NotImplementedException();
-            }
         }
         
         /// <summary>
@@ -601,7 +624,7 @@ namespace Final_Project_CNPM {
         public partial class wareHouseRow : global::System.Data.DataRow {
             
             private wareHouseDataTable tablewareHouse;
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal wareHouseRow(global::System.Data.DataRowBuilder rb) : 
@@ -683,10 +706,39 @@ namespace Final_Project_CNPM {
                     this[this.tablewareHouse.priceOutColumn] = value;
                 }
             }
-
-            public string nameCategory { get; internal set; }
-            public string employID { get; internal set; }
-
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string categoryName {
+                get {
+                    try {
+                        return ((string)(this[this.tablewareHouse.categoryNameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'categoryName\' in table \'wareHouse\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablewareHouse.categoryNameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string employeeID {
+                get {
+                    try {
+                        return ((string)(this[this.tablewareHouse.employeeIDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'employeeID\' in table \'wareHouse\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablewareHouse.employeeIDColumn] = value;
+                }
+            }
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsproductNameNull() {
@@ -734,6 +786,30 @@ namespace Final_Project_CNPM {
             public void SetpriceOutNull() {
                 this[this.tablewareHouse.priceOutColumn] = global::System.Convert.DBNull;
             }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IscategoryNameNull() {
+                return this.IsNull(this.tablewareHouse.categoryNameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetcategoryNameNull() {
+                this[this.tablewareHouse.categoryNameColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsemployeeIDNull() {
+                return this.IsNull(this.tablewareHouse.employeeIDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetemployeeIDNull() {
+                this[this.tablewareHouse.employeeIDColumn] = global::System.Convert.DBNull;
+            }
         }
         
         /// <summary>
@@ -771,7 +847,7 @@ namespace Final_Project_CNPM {
         }
     }
 }
-namespace Final_Project_CNPM.eShopManagerDataSetTableAdapters {
+namespace Final_Project_CNPM.eShopManagerDataSet1TableAdapters {
     
     
     /// <summary>
@@ -900,12 +976,12 @@ namespace Final_Project_CNPM.eShopManagerDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("quantity", "quantity");
             tableMapping.ColumnMappings.Add("priceIn", "priceIn");
             tableMapping.ColumnMappings.Add("priceOut", "priceOut");
-            tableMapping.ColumnMappings.Add("nameCategory", "nameCategory");
-            tableMapping.ColumnMappings.Add("employID", "employID");
+            tableMapping.ColumnMappings.Add("categoryName", "categoryName");
+            tableMapping.ColumnMappings.Add("employeeID", "employeeID");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[wareHouse] WHERE (([productID] = @Original_productID) AND ((@IsNull_productName = 1 AND [productName] IS NULL) OR ([productName] = @Original_productName)) AND ((@IsNull_quantity = 1 AND [quantity] IS NULL) OR ([quantity] = @Original_quantity)) AND ((@IsNull_priceIn = 1 AND [priceIn] IS NULL) OR ([priceIn] = @Original_priceIn)) AND ((@IsNull_priceOut = 1 AND [priceOut] IS NULL) OR ([priceOut] = @Original_priceOut)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[wareHouse] WHERE (([productID] = @Original_productID) AND ((@IsNull_productName = 1 AND [productName] IS NULL) OR ([productName] = @Original_productName)) AND ((@IsNull_quantity = 1 AND [quantity] IS NULL) OR ([quantity] = @Original_quantity)) AND ((@IsNull_priceIn = 1 AND [priceIn] IS NULL) OR ([priceIn] = @Original_priceIn)) AND ((@IsNull_priceOut = 1 AND [priceOut] IS NULL) OR ([priceOut] = @Original_priceOut)) AND ((@IsNull_categoryName = 1 AND [categoryName] IS NULL) OR ([categoryName] = @Original_categoryName)) AND ((@IsNull_employeeID = 1 AND [employeeID] IS NULL) OR ([employeeID] = @Original_employeeID)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_productID", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "productID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_productName", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "productName", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -916,26 +992,34 @@ namespace Final_Project_CNPM.eShopManagerDataSetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_priceIn", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "priceIn", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_priceOut", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "priceOut", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_priceOut", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "priceOut", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_categoryName", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "categoryName", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_categoryName", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "categoryName", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_employeeID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "employeeID", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_employeeID", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "employeeID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[wareHouse] ([productID], [productName], [quantity], [priceIn], [priceOut]) VALUES (@productID, @productName, @quantity, @priceIn, @priceOut);
-SELECT productID, productName, quantity, priceIn, priceOut FROM wareHouse WHERE (productID = @productID)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[wareHouse] ([productID], [productName], [quantity], [priceIn], [priceOut], [categoryName], [employeeID]) VALUES (@productID, @productName, @quantity, @priceIn, @priceOut, @categoryName, @employeeID);
+SELECT productID, productName, quantity, priceIn, priceOut, categoryName, employeeID FROM wareHouse WHERE (productID = @productID)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@productID", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "productID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@productName", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "productName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@quantity", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "quantity", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@priceIn", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "priceIn", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@priceOut", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "priceOut", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@categoryName", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "categoryName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@employeeID", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "employeeID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[wareHouse] SET [productID] = @productID, [productName] = @productName, [quantity] = @quantity, [priceIn] = @priceIn, [priceOut] = @priceOut WHERE (([productID] = @Original_productID) AND ((@IsNull_productName = 1 AND [productName] IS NULL) OR ([productName] = @Original_productName)) AND ((@IsNull_quantity = 1 AND [quantity] IS NULL) OR ([quantity] = @Original_quantity)) AND ((@IsNull_priceIn = 1 AND [priceIn] IS NULL) OR ([priceIn] = @Original_priceIn)) AND ((@IsNull_priceOut = 1 AND [priceOut] IS NULL) OR ([priceOut] = @Original_priceOut)));
-SELECT productID, productName, quantity, priceIn, priceOut FROM wareHouse WHERE (productID = @productID)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[wareHouse] SET [productID] = @productID, [productName] = @productName, [quantity] = @quantity, [priceIn] = @priceIn, [priceOut] = @priceOut, [categoryName] = @categoryName, [employeeID] = @employeeID WHERE (([productID] = @Original_productID) AND ((@IsNull_productName = 1 AND [productName] IS NULL) OR ([productName] = @Original_productName)) AND ((@IsNull_quantity = 1 AND [quantity] IS NULL) OR ([quantity] = @Original_quantity)) AND ((@IsNull_priceIn = 1 AND [priceIn] IS NULL) OR ([priceIn] = @Original_priceIn)) AND ((@IsNull_priceOut = 1 AND [priceOut] IS NULL) OR ([priceOut] = @Original_priceOut)) AND ((@IsNull_categoryName = 1 AND [categoryName] IS NULL) OR ([categoryName] = @Original_categoryName)) AND ((@IsNull_employeeID = 1 AND [employeeID] IS NULL) OR ([employeeID] = @Original_employeeID)));
+SELECT productID, productName, quantity, priceIn, priceOut, categoryName, employeeID FROM wareHouse WHERE (productID = @productID)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@productID", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "productID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@productName", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "productName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@quantity", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "quantity", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@priceIn", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "priceIn", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@priceOut", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "priceOut", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@categoryName", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "categoryName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@employeeID", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "employeeID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_productID", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "productID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_productName", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "productName", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_productName", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "productName", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -945,6 +1029,10 @@ SELECT productID, productName, quantity, priceIn, priceOut FROM wareHouse WHERE 
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_priceIn", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "priceIn", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_priceOut", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "priceOut", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_priceOut", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "priceOut", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_categoryName", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "categoryName", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_categoryName", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "categoryName", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_employeeID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "employeeID", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_employeeID", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "employeeID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -960,7 +1048,8 @@ SELECT productID, productName, quantity, priceIn, priceOut FROM wareHouse WHERE 
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT productID, productName, quantity, priceIn, priceOut FROM dbo.wareHouse";
+            this._commandCollection[0].CommandText = "SELECT productID, productName, quantity, priceIn, priceOut, categoryName, employe" +
+                "eID FROM dbo.wareHouse";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -968,7 +1057,7 @@ SELECT productID, productName, quantity, priceIn, priceOut FROM wareHouse WHERE 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(eShopManagerDataSet.wareHouseDataTable dataTable) {
+        public virtual int Fill(eShopManagerDataSet1.wareHouseDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -981,9 +1070,9 @@ SELECT productID, productName, quantity, priceIn, priceOut FROM wareHouse WHERE 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual eShopManagerDataSet.wareHouseDataTable GetData() {
+        public virtual eShopManagerDataSet1.wareHouseDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            eShopManagerDataSet.wareHouseDataTable dataTable = new eShopManagerDataSet.wareHouseDataTable();
+            eShopManagerDataSet1.wareHouseDataTable dataTable = new eShopManagerDataSet1.wareHouseDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -991,14 +1080,14 @@ SELECT productID, productName, quantity, priceIn, priceOut FROM wareHouse WHERE 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(eShopManagerDataSet.wareHouseDataTable dataTable) {
+        public virtual int Update(eShopManagerDataSet1.wareHouseDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(eShopManagerDataSet dataSet) {
+        public virtual int Update(eShopManagerDataSet1 dataSet) {
             return this.Adapter.Update(dataSet, "wareHouse");
         }
         
@@ -1021,7 +1110,7 @@ SELECT productID, productName, quantity, priceIn, priceOut FROM wareHouse WHERE 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(string Original_productID, string Original_productName, global::System.Nullable<int> Original_quantity, global::System.Nullable<int> Original_priceIn, global::System.Nullable<int> Original_priceOut) {
+        public virtual int Delete(string Original_productID, string Original_productName, global::System.Nullable<int> Original_quantity, global::System.Nullable<int> Original_priceIn, global::System.Nullable<int> Original_priceOut, string Original_categoryName, string Original_employeeID) {
             if ((Original_productID == null)) {
                 throw new global::System.ArgumentNullException("Original_productID");
             }
@@ -1060,6 +1149,22 @@ SELECT productID, productName, quantity, priceIn, priceOut FROM wareHouse WHERE 
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
+            if ((Original_categoryName == null)) {
+                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_categoryName));
+            }
+            if ((Original_employeeID == null)) {
+                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[12].Value = ((string)(Original_employeeID));
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1080,7 +1185,7 @@ SELECT productID, productName, quantity, priceIn, priceOut FROM wareHouse WHERE 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string productID, string productName, global::System.Nullable<int> quantity, global::System.Nullable<int> priceIn, global::System.Nullable<int> priceOut) {
+        public virtual int Insert(string productID, string productName, global::System.Nullable<int> quantity, global::System.Nullable<int> priceIn, global::System.Nullable<int> priceOut, string categoryName, string employeeID) {
             if ((productID == null)) {
                 throw new global::System.ArgumentNullException("productID");
             }
@@ -1111,6 +1216,18 @@ SELECT productID, productName, quantity, priceIn, priceOut FROM wareHouse WHERE 
             else {
                 this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
+            if ((categoryName == null)) {
+                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(categoryName));
+            }
+            if ((employeeID == null)) {
+                this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(employeeID));
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1131,7 +1248,7 @@ SELECT productID, productName, quantity, priceIn, priceOut FROM wareHouse WHERE 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string productID, string productName, global::System.Nullable<int> quantity, global::System.Nullable<int> priceIn, global::System.Nullable<int> priceOut, string Original_productID, string Original_productName, global::System.Nullable<int> Original_quantity, global::System.Nullable<int> Original_priceIn, global::System.Nullable<int> Original_priceOut) {
+        public virtual int Update(string productID, string productName, global::System.Nullable<int> quantity, global::System.Nullable<int> priceIn, global::System.Nullable<int> priceOut, string categoryName, string employeeID, string Original_productID, string Original_productName, global::System.Nullable<int> Original_quantity, global::System.Nullable<int> Original_priceIn, global::System.Nullable<int> Original_priceOut, string Original_categoryName, string Original_employeeID) {
             if ((productID == null)) {
                 throw new global::System.ArgumentNullException("productID");
             }
@@ -1162,43 +1279,71 @@ SELECT productID, productName, quantity, priceIn, priceOut FROM wareHouse WHERE 
             else {
                 this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
+            if ((categoryName == null)) {
+                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(categoryName));
+            }
+            if ((employeeID == null)) {
+                this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(employeeID));
+            }
             if ((Original_productID == null)) {
                 throw new global::System.ArgumentNullException("Original_productID");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Original_productID));
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_productID));
             }
             if ((Original_productName == null)) {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_productName));
-            }
-            if ((Original_quantity.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((int)(Original_quantity.Value));
-            }
-            else {
                 this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
-            if ((Original_priceIn.HasValue == true)) {
+            else {
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_productName));
+            }
+            if ((Original_quantity.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((int)(Original_priceIn.Value));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((int)(Original_quantity.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
             }
-            if ((Original_priceOut.HasValue == true)) {
+            if ((Original_priceIn.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(Original_priceOut.Value));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(Original_priceIn.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
+            }
+            if ((Original_priceOut.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((int)(Original_priceOut.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
+            }
+            if ((Original_categoryName == null)) {
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[17].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((string)(Original_categoryName));
+            }
+            if ((Original_employeeID == null)) {
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[19].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((string)(Original_employeeID));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1220,8 +1365,8 @@ SELECT productID, productName, quantity, priceIn, priceOut FROM wareHouse WHERE 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string productName, global::System.Nullable<int> quantity, global::System.Nullable<int> priceIn, global::System.Nullable<int> priceOut, string Original_productID, string Original_productName, global::System.Nullable<int> Original_quantity, global::System.Nullable<int> Original_priceIn, global::System.Nullable<int> Original_priceOut) {
-            return this.Update(Original_productID, productName, quantity, priceIn, priceOut, Original_productID, Original_productName, Original_quantity, Original_priceIn, Original_priceOut);
+        public virtual int Update(string productName, global::System.Nullable<int> quantity, global::System.Nullable<int> priceIn, global::System.Nullable<int> priceOut, string categoryName, string employeeID, string Original_productID, string Original_productName, global::System.Nullable<int> Original_quantity, global::System.Nullable<int> Original_priceIn, global::System.Nullable<int> Original_priceOut, string Original_categoryName, string Original_employeeID) {
+            return this.Update(Original_productID, productName, quantity, priceIn, priceOut, categoryName, employeeID, Original_productID, Original_productName, Original_quantity, Original_priceIn, Original_priceOut, Original_categoryName, Original_employeeID);
         }
     }
     
@@ -1316,7 +1461,7 @@ SELECT productID, productName, quantity, priceIn, priceOut FROM wareHouse WHERE 
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateUpdatedRows(eShopManagerDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(eShopManagerDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._wareHouseTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.wareHouse.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -1335,7 +1480,7 @@ SELECT productID, productName, quantity, priceIn, priceOut FROM wareHouse WHERE 
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateInsertedRows(eShopManagerDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(eShopManagerDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._wareHouseTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.wareHouse.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -1353,7 +1498,7 @@ SELECT productID, productName, quantity, priceIn, priceOut FROM wareHouse WHERE 
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateDeletedRows(eShopManagerDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(eShopManagerDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._wareHouseTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.wareHouse.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -1395,7 +1540,7 @@ SELECT productID, productName, quantity, priceIn, priceOut FROM wareHouse WHERE 
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public virtual int UpdateAll(eShopManagerDataSet dataSet) {
+        public virtual int UpdateAll(eShopManagerDataSet1 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

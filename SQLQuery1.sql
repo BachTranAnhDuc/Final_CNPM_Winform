@@ -33,6 +33,8 @@ create table wareHouse
 	quantity int,
 	priceIn int,
 	priceOut int,
+	categoryName nvarchar(100),
+	employeeID varchar(20),
 	primary key(productID)
 );
 
@@ -53,7 +55,7 @@ insert into Employee (ID, nameEmployee, uname, pwd, addresses) values ('001', 'B
 insert into Employee (ID, nameEmployee, uname, pwd, addresses) values ('002', 'Hoang Tuan Anh', 'username002', '123456', 'Ho Chi Minh City');
 
 
-insert into wareHouse (productID, productName, quantity, priceIn, priceOut, nameCategory, employID) values ('001', 'CoCa', '3', '10', '12', 'water', '001');
+insert into wareHouse (productID, productName, quantity, priceIn, priceOut, categoryName, employeeID) values ('001', 'CoCa', '3', '10', '12', 'water', '001');
 
 
 
@@ -65,4 +67,6 @@ drop table wareHouse;
 drop table Product;
 drop table student1;
 drop table student;
-drop table Employee
+drop table Employee;
+
+delete from wareHouse where productID = '001'

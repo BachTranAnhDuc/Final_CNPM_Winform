@@ -54,7 +54,7 @@ namespace Final_Project_CNPM
             this.sideBar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sideBar.Location = new System.Drawing.Point(0, 0);
             this.sideBar.Name = "sideBar";
-            this.sideBar.Size = new System.Drawing.Size(228, 636);
+            this.sideBar.Size = new System.Drawing.Size(228, 753);
             this.sideBar.TabIndex = 0;
             // 
             // xuiButton5
@@ -71,7 +71,7 @@ namespace Final_Project_CNPM
             this.xuiButton5.HoverBackgroundColor = System.Drawing.Color.Aqua;
             this.xuiButton5.HoverTextColor = System.Drawing.Color.Azure;
             this.xuiButton5.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton5.Location = new System.Drawing.Point(0, 461);
+            this.xuiButton5.Location = new System.Drawing.Point(0, 474);
             this.xuiButton5.Name = "xuiButton5";
             this.xuiButton5.Size = new System.Drawing.Size(228, 87);
             this.xuiButton5.TabIndex = 5;
@@ -92,7 +92,7 @@ namespace Final_Project_CNPM
             this.xuiButton4.HoverBackgroundColor = System.Drawing.Color.Aqua;
             this.xuiButton4.HoverTextColor = System.Drawing.Color.Azure;
             this.xuiButton4.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton4.Location = new System.Drawing.Point(0, 374);
+            this.xuiButton4.Location = new System.Drawing.Point(0, 387);
             this.xuiButton4.Name = "xuiButton4";
             this.xuiButton4.Size = new System.Drawing.Size(228, 87);
             this.xuiButton4.TabIndex = 4;
@@ -113,7 +113,7 @@ namespace Final_Project_CNPM
             this.xuiButton3.HoverBackgroundColor = System.Drawing.Color.Aqua;
             this.xuiButton3.HoverTextColor = System.Drawing.Color.Azure;
             this.xuiButton3.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton3.Location = new System.Drawing.Point(0, 287);
+            this.xuiButton3.Location = new System.Drawing.Point(0, 300);
             this.xuiButton3.Name = "xuiButton3";
             this.xuiButton3.Size = new System.Drawing.Size(228, 87);
             this.xuiButton3.TabIndex = 3;
@@ -135,7 +135,7 @@ namespace Final_Project_CNPM
             this.btnWareHouse.HoverBackgroundColor = System.Drawing.Color.Aqua;
             this.btnWareHouse.HoverTextColor = System.Drawing.Color.Azure;
             this.btnWareHouse.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.btnWareHouse.Location = new System.Drawing.Point(0, 200);
+            this.btnWareHouse.Location = new System.Drawing.Point(0, 213);
             this.btnWareHouse.Name = "btnWareHouse";
             this.btnWareHouse.Size = new System.Drawing.Size(228, 87);
             this.btnWareHouse.TabIndex = 2;
@@ -157,7 +157,7 @@ namespace Final_Project_CNPM
             this.btnProduct.HoverBackgroundColor = System.Drawing.Color.Aqua;
             this.btnProduct.HoverTextColor = System.Drawing.Color.Azure;
             this.btnProduct.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.btnProduct.Location = new System.Drawing.Point(0, 113);
+            this.btnProduct.Location = new System.Drawing.Point(0, 126);
             this.btnProduct.Name = "btnProduct";
             this.btnProduct.Size = new System.Drawing.Size(228, 87);
             this.btnProduct.TabIndex = 1;
@@ -171,7 +171,7 @@ namespace Final_Project_CNPM
             this.Logo.Dock = System.Windows.Forms.DockStyle.Top;
             this.Logo.Location = new System.Drawing.Point(0, 0);
             this.Logo.Name = "Logo";
-            this.Logo.Size = new System.Drawing.Size(228, 113);
+            this.Logo.Size = new System.Drawing.Size(228, 126);
             this.Logo.TabIndex = 0;
             // 
             // navBar
@@ -180,15 +180,15 @@ namespace Final_Project_CNPM
             this.navBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.navBar.Location = new System.Drawing.Point(228, 0);
             this.navBar.Name = "navBar";
-            this.navBar.Size = new System.Drawing.Size(879, 113);
+            this.navBar.Size = new System.Drawing.Size(1054, 126);
             this.navBar.TabIndex = 1;
             // 
             // panelMain
             // 
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMain.Location = new System.Drawing.Point(228, 113);
+            this.panelMain.Location = new System.Drawing.Point(228, 126);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(879, 523);
+            this.panelMain.Size = new System.Drawing.Size(1054, 627);
             this.panelMain.TabIndex = 2;
             this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMain_Paint);
             // 
@@ -196,7 +196,7 @@ namespace Final_Project_CNPM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1107, 636);
+            this.ClientSize = new System.Drawing.Size(1282, 753);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.navBar);
             this.Controls.Add(this.sideBar);

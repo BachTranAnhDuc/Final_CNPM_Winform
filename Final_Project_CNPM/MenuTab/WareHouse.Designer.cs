@@ -44,11 +44,6 @@ namespace Final_Project_CNPM.MenuTab
             this.prdName = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.wareHouseBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.eShopManagerDataSet = new Final_Project_CNPM.eShopManagerDataSet();
-            this.label1 = new System.Windows.Forms.Label();
-            this.prdID = new System.Windows.Forms.TextBox();
-            this.wareHouseTableAdapter = new Final_Project_CNPM.eShopManagerDataSetTableAdapters.wareHouseTableAdapter();
             this.productIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,18 +51,24 @@ namespace Final_Project_CNPM.MenuTab
             this.priceOutDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.categoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.employeeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.wareHouseBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.eShopManagerDataSet1 = new Final_Project_CNPM.eShopManagerDataSet1();
+            this.label1 = new System.Windows.Forms.Label();
+            this.prdID = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.prdCateName = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.prdEmID = new System.Windows.Forms.TextBox();
+            this.wareHouseTableAdapter1 = new Final_Project_CNPM.eShopManagerDataSet1TableAdapters.wareHouseTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wareHouseBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eShopManagerDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wareHouseBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eShopManagerDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnWareClear
             // 
-            this.btnWareClear.Location = new System.Drawing.Point(333, 424);
+            this.btnWareClear.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnWareClear.Location = new System.Drawing.Point(278, 423);
             this.btnWareClear.Margin = new System.Windows.Forms.Padding(4);
             this.btnWareClear.Name = "btnWareClear";
             this.btnWareClear.Size = new System.Drawing.Size(76, 49);
@@ -77,7 +78,8 @@ namespace Final_Project_CNPM.MenuTab
             // 
             // btnWareDelete
             // 
-            this.btnWareDelete.Location = new System.Drawing.Point(333, 353);
+            this.btnWareDelete.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnWareDelete.Location = new System.Drawing.Point(278, 352);
             this.btnWareDelete.Margin = new System.Windows.Forms.Padding(4);
             this.btnWareDelete.Name = "btnWareDelete";
             this.btnWareDelete.Size = new System.Drawing.Size(76, 49);
@@ -88,7 +90,8 @@ namespace Final_Project_CNPM.MenuTab
             // 
             // btnWareUpdate
             // 
-            this.btnWareUpdate.Location = new System.Drawing.Point(236, 424);
+            this.btnWareUpdate.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnWareUpdate.Location = new System.Drawing.Point(181, 423);
             this.btnWareUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.btnWareUpdate.Name = "btnWareUpdate";
             this.btnWareUpdate.Size = new System.Drawing.Size(80, 49);
@@ -99,7 +102,8 @@ namespace Final_Project_CNPM.MenuTab
             // 
             // btnWareAdd
             // 
-            this.btnWareAdd.Location = new System.Drawing.Point(236, 353);
+            this.btnWareAdd.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnWareAdd.Location = new System.Drawing.Point(181, 352);
             this.btnWareAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnWareAdd.Name = "btnWareAdd";
             this.btnWareAdd.Size = new System.Drawing.Size(77, 49);
@@ -110,6 +114,7 @@ namespace Final_Project_CNPM.MenuTab
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(35, 216);
@@ -121,6 +126,7 @@ namespace Final_Project_CNPM.MenuTab
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(35, 184);
@@ -132,24 +138,27 @@ namespace Final_Project_CNPM.MenuTab
             // 
             // prdPriceOut
             // 
+            this.prdPriceOut.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.prdPriceOut.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.prdPriceOut.Location = new System.Drawing.Point(170, 212);
             this.prdPriceOut.Margin = new System.Windows.Forms.Padding(4);
             this.prdPriceOut.Name = "prdPriceOut";
-            this.prdPriceOut.Size = new System.Drawing.Size(239, 22);
+            this.prdPriceOut.Size = new System.Drawing.Size(184, 22);
             this.prdPriceOut.TabIndex = 41;
             // 
             // prdPriceIn
             // 
+            this.prdPriceIn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.prdPriceIn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.prdPriceIn.Location = new System.Drawing.Point(170, 179);
             this.prdPriceIn.Margin = new System.Windows.Forms.Padding(4);
             this.prdPriceIn.Name = "prdPriceIn";
-            this.prdPriceIn.Size = new System.Drawing.Size(239, 22);
+            this.prdPriceIn.Size = new System.Drawing.Size(184, 22);
             this.prdPriceIn.TabIndex = 40;
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(35, 152);
@@ -161,6 +170,7 @@ namespace Final_Project_CNPM.MenuTab
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(34, 116);
@@ -172,26 +182,28 @@ namespace Final_Project_CNPM.MenuTab
             // 
             // prdQuantity
             // 
+            this.prdQuantity.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.prdQuantity.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.prdQuantity.Location = new System.Drawing.Point(170, 147);
             this.prdQuantity.Margin = new System.Windows.Forms.Padding(4);
             this.prdQuantity.Name = "prdQuantity";
-            this.prdQuantity.Size = new System.Drawing.Size(239, 22);
+            this.prdQuantity.Size = new System.Drawing.Size(184, 22);
             this.prdQuantity.TabIndex = 36;
             // 
             // prdName
             // 
+            this.prdName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.prdName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.prdName.Location = new System.Drawing.Point(170, 112);
             this.prdName.Margin = new System.Windows.Forms.Padding(4);
             this.prdName.Name = "prdName";
-            this.prdName.Size = new System.Drawing.Size(239, 22);
+            this.prdName.Size = new System.Drawing.Size(184, 22);
             this.prdName.TabIndex = 35;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(563, 25);
+            this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dateTimePicker1.Location = new System.Drawing.Point(738, 25);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(265, 22);
@@ -199,7 +211,7 @@ namespace Final_Project_CNPM.MenuTab
             // 
             // dataGridView1
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
@@ -212,48 +224,14 @@ namespace Final_Project_CNPM.MenuTab
             this.priceOutDataGridViewTextBoxColumn,
             this.categoryName,
             this.employeeID});
-            this.dataGridView1.DataSource = this.wareHouseBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(448, 73);
+            this.dataGridView1.DataSource = this.wareHouseBindingSource1;
+            this.dataGridView1.Location = new System.Drawing.Point(405, 73);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(400, 359);
+            this.dataGridView1.Size = new System.Drawing.Size(618, 399);
             this.dataGridView1.TabIndex = 54;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // wareHouseBindingSource
-            // 
-            this.wareHouseBindingSource.DataMember = "wareHouse";
-            this.wareHouseBindingSource.DataSource = this.eShopManagerDataSet;
-            // 
-            // eShopManagerDataSet
-            // 
-            this.eShopManagerDataSet.DataSetName = "eShopManagerDataSet";
-            this.eShopManagerDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(34, 86);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 20);
-            this.label1.TabIndex = 57;
-            this.label1.Text = "ID Product";
-            // 
-            // prdID
-            // 
-            this.prdID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.prdID.Location = new System.Drawing.Point(170, 82);
-            this.prdID.Margin = new System.Windows.Forms.Padding(4);
-            this.prdID.Name = "prdID";
-            this.prdID.Size = new System.Drawing.Size(239, 22);
-            this.prdID.TabIndex = 56;
-            // 
-            // wareHouseTableAdapter
-            // 
-            this.wareHouseTableAdapter.ClearBeforeFill = true;
             // 
             // productIDDataGridViewTextBoxColumn
             // 
@@ -292,6 +270,7 @@ namespace Final_Project_CNPM.MenuTab
             // 
             // categoryName
             // 
+            this.categoryName.DataPropertyName = "priceOut";
             this.categoryName.HeaderText = "categoryName";
             this.categoryName.MinimumWidth = 6;
             this.categoryName.Name = "categoryName";
@@ -303,8 +282,41 @@ namespace Final_Project_CNPM.MenuTab
             this.employeeID.MinimumWidth = 6;
             this.employeeID.Name = "employeeID";
             // 
+            // wareHouseBindingSource1
+            // 
+            this.wareHouseBindingSource1.DataMember = "wareHouse";
+            this.wareHouseBindingSource1.DataSource = this.eShopManagerDataSet1;
+            // 
+            // eShopManagerDataSet1
+            // 
+            this.eShopManagerDataSet1.DataSetName = "eShopManagerDataSet1";
+            this.eShopManagerDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(34, 86);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(89, 20);
+            this.label1.TabIndex = 57;
+            this.label1.Text = "ID Product";
+            // 
+            // prdID
+            // 
+            this.prdID.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.prdID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.prdID.Location = new System.Drawing.Point(170, 82);
+            this.prdID.Margin = new System.Windows.Forms.Padding(4);
+            this.prdID.Name = "prdID";
+            this.prdID.Size = new System.Drawing.Size(184, 22);
+            this.prdID.TabIndex = 56;
+            // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(35, 255);
@@ -316,15 +328,17 @@ namespace Final_Project_CNPM.MenuTab
             // 
             // prdCateName
             // 
+            this.prdCateName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.prdCateName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.prdCateName.Location = new System.Drawing.Point(170, 251);
             this.prdCateName.Margin = new System.Windows.Forms.Padding(4);
             this.prdCateName.Name = "prdCateName";
-            this.prdCateName.Size = new System.Drawing.Size(239, 22);
+            this.prdCateName.Size = new System.Drawing.Size(184, 22);
             this.prdCateName.TabIndex = 58;
             // 
             // label7
             // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(35, 300);
@@ -336,18 +350,23 @@ namespace Final_Project_CNPM.MenuTab
             // 
             // prdEmID
             // 
+            this.prdEmID.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.prdEmID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.prdEmID.Location = new System.Drawing.Point(170, 296);
             this.prdEmID.Margin = new System.Windows.Forms.Padding(4);
             this.prdEmID.Name = "prdEmID";
-            this.prdEmID.Size = new System.Drawing.Size(239, 22);
+            this.prdEmID.Size = new System.Drawing.Size(184, 22);
             this.prdEmID.TabIndex = 60;
+            // 
+            // wareHouseTableAdapter1
+            // 
+            this.wareHouseTableAdapter1.ClearBeforeFill = true;
             // 
             // WareHouse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(861, 476);
+            this.ClientSize = new System.Drawing.Size(1036, 580);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.prdEmID);
             this.Controls.Add(this.label4);
@@ -372,8 +391,8 @@ namespace Final_Project_CNPM.MenuTab
             this.Text = "WareHouse";
             this.Load += new System.EventHandler(this.WareHouse_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wareHouseBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eShopManagerDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wareHouseBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eShopManagerDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -397,9 +416,10 @@ namespace Final_Project_CNPM.MenuTab
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox prdID;
-        private eShopManagerDataSet eShopManagerDataSet;
-        private System.Windows.Forms.BindingSource wareHouseBindingSource;
-        private eShopManagerDataSetTableAdapters.wareHouseTableAdapter wareHouseTableAdapter;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox prdCateName;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox prdEmID;
         private System.Windows.Forms.DataGridViewTextBoxColumn productIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn productNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn quantityDataGridViewTextBoxColumn;
@@ -407,9 +427,8 @@ namespace Final_Project_CNPM.MenuTab
         private System.Windows.Forms.DataGridViewTextBoxColumn priceOutDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn categoryName;
         private System.Windows.Forms.DataGridViewTextBoxColumn employeeID;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox prdCateName;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox prdEmID;
+        private eShopManagerDataSet1 eShopManagerDataSet1;
+        private System.Windows.Forms.BindingSource wareHouseBindingSource1;
+        private eShopManagerDataSet1TableAdapters.wareHouseTableAdapter wareHouseTableAdapter1;
     }
 }
