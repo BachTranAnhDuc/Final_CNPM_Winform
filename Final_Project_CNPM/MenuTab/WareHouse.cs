@@ -34,6 +34,8 @@ namespace Final_Project_CNPM.MenuTab
             prdQuantity.Text = row.Cells[2].Value.ToString();
             prdPriceIn.Text = row.Cells[3].Value.ToString();
             prdPriceOut.Text = row.Cells[4].Value.ToString();
+            prdCateName.Text = row.Cells[5].Value.ToString();
+            prdEmID.Text = row.Cells[6].Value.ToString();
         }
 
         private void btnWareAdd_Click(object sender, EventArgs e)
@@ -70,6 +72,9 @@ namespace Final_Project_CNPM.MenuTab
             ware.quantity = Int32.Parse(prdQuantity.Text);
             ware.priceIn = Int32.Parse(prdPriceIn.Text);
             ware.priceOut = Int32.Parse(prdPriceOut.Text);
+            ware.nameCategory = prdCateName.Text;
+            ware.employID = prdEmID.Text;
+
 
             this.wareHouseTableAdapter.Update(ware);
 

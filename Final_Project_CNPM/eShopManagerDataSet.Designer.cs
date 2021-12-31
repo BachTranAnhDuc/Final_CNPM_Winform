@@ -601,7 +601,10 @@ namespace Final_Project_CNPM {
         public partial class wareHouseRow : global::System.Data.DataRow {
             
             private wareHouseDataTable tablewareHouse;
-            
+            internal object prdCateName;
+            internal string nameCategory;
+            internal object employID;
+
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal wareHouseRow(global::System.Data.DataRowBuilder rb) : 

@@ -6,7 +6,7 @@ use eShopManager;
 /* Create Tables*/
 create table Employee
 (
-	ID varchar(20),
+	ID nvarchar(100),
 	nameEmployee nvarchar(100),
 	uname varchar(50),
 	pwd varchar(50),
@@ -53,7 +53,7 @@ insert into Employee (ID, nameEmployee, uname, pwd, addresses) values ('001', 'B
 insert into Employee (ID, nameEmployee, uname, pwd, addresses) values ('002', 'Hoang Tuan Anh', 'username002', '123456', 'Ho Chi Minh City');
 
 
-insert into wareHouse (productID, productName, quantity, priceIn, priceOut) values ('001', 'CoCa', '3', '10', '12');
+insert into wareHouse (productID, productName, quantity, priceIn, priceOut, nameCategory, employID) values ('001', 'CoCa', '3', '10', '12', 'water', '001');
 
 
 
@@ -65,3 +65,4 @@ drop table wareHouse;
 drop table Product;
 drop table student1;
 drop table student;
+drop table Employee
