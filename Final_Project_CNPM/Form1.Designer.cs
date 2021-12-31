@@ -38,6 +38,7 @@ namespace Final_Project_CNPM
             this.usernameInput = new System.Windows.Forms.TextBox();
             this.passwordInput = new System.Windows.Forms.TextBox();
             this.xuiButton1 = new XanderUI.XUIButton();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -136,10 +137,20 @@ namespace Final_Project_CNPM
             this.xuiButton1.TextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton1.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(413, 60);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(902, 511);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.xuiButton1);
             this.Controls.Add(this.passwordInput);
             this.Controls.Add(this.usernameInput);
@@ -169,6 +180,7 @@ namespace Final_Project_CNPM
         private System.Windows.Forms.TextBox usernameInput;
         private System.Windows.Forms.TextBox passwordInput;
         private XanderUI.XUIButton xuiButton1;
+        private System.Windows.Forms.Button button1;
     }
 }
 

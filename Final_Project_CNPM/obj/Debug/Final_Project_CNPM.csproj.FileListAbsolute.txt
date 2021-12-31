@@ -67,7 +67,6 @@ D:\Deadline\FinalCNPM\Code\Final_Project_CNPM\Final_Project_CNPM\bin\Debug\Bunif
 D:\Deadline\FinalCNPM\Code\Final_Project_CNPM\Final_Project_CNPM\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.xml
 D:\Deadline\FinalCNPM\Code\Final_Project_CNPM\Final_Project_CNPM\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.xml
 D:\Deadline\FinalCNPM\Code\Final_Project_CNPM\Final_Project_CNPM\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.xml
-D:\Deadline\FinalCNPM\Code\Final_Project_CNPM\Final_Project_CNPM\obj\Debug\Final_Project_CNPM.csproj.AssemblyReference.cache
 D:\Deadline\FinalCNPM\Code\Final_Project_CNPM\Final_Project_CNPM\obj\Debug\Final_Project_CNPM.Properties.Resources.resources
 D:\Deadline\FinalCNPM\Code\Final_Project_CNPM\Final_Project_CNPM\obj\Debug\Final_Project_CNPM.csproj.GenerateResource.cache
 D:\Deadline\FinalCNPM\Code\Final_Project_CNPM\Final_Project_CNPM\obj\Debug\Final_Project_CNPM.csproj.CoreCompileInputs.cache
@@ -76,3 +75,8 @@ D:\Deadline\FinalCNPM\Code\Final_Project_CNPM\Final_Project_CNPM\obj\Debug\Final
 D:\Deadline\FinalCNPM\Code\Final_Project_CNPM\Final_Project_CNPM\obj\Debug\Final_Project_CNPM.pdb
 D:\Deadline\FinalCNPM\Code\Final_Project_CNPM\Final_Project_CNPM\bin\Debug\XanderUI.dll
 D:\Deadline\FinalCNPM\Code\Final_Project_CNPM\Final_Project_CNPM\obj\Debug\Final_Project_CNPM.Form1.resources
+D:\Deadline\FinalCNPM\Code\Final_Project_CNPM\Final_Project_CNPM\obj\Debug\Final_Project_CNPM.HomePage.resources
+D:\Deadline\FinalCNPM\Code\Final_Project_CNPM\Final_Project_CNPM\obj\Debug\Final_Project_CNPM.MenuTab.Home.resources
+D:\Deadline\FinalCNPM\Code\Final_Project_CNPM\Final_Project_CNPM\obj\Debug\Final_Project_CNPM.MenuTab.Product.resources
+D:\Deadline\FinalCNPM\Code\Final_Project_CNPM\Final_Project_CNPM\obj\Debug\Final_Project_CNPM.MenuTab.WareHouse.resources
+D:\Deadline\FinalCNPM\Code\Final_Project_CNPM\Final_Project_CNPM\bin\Debug\FontAwesome.Sharp.dll
