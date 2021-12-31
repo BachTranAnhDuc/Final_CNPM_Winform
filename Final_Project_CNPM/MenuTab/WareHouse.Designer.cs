@@ -29,68 +29,84 @@ namespace Final_Project_CNPM.MenuTab
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnclear = new System.Windows.Forms.Button();
-            this.btndelete = new System.Windows.Forms.Button();
-            this.btnsave = new System.Windows.Forms.Button();
-            this.btnadd = new System.Windows.Forms.Button();
+            this.components = new System.ComponentModel.Container();
+            this.btnWareClear = new System.Windows.Forms.Button();
+            this.btnWareDelete = new System.Windows.Forms.Button();
+            this.btnWareUpdate = new System.Windows.Forms.Button();
+            this.btnWareAdd = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtgiaban = new System.Windows.Forms.TextBox();
-            this.txtgianhap = new System.Windows.Forms.TextBox();
+            this.prdPriceOut = new System.Windows.Forms.TextBox();
+            this.prdPriceIn = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtsl = new System.Windows.Forms.TextBox();
-            this.txttensp = new System.Windows.Forms.TextBox();
+            this.prdQuantity = new System.Windows.Forms.TextBox();
+            this.prdName = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.prdID = new System.Windows.Forms.TextBox();
+            this.productIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.priceInDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.priceOutDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.wareHouseBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.eShopManagerDataSet = new Final_Project_CNPM.eShopManagerDataSet();
+            this.wareHouseTableAdapter = new Final_Project_CNPM.eShopManagerDataSetTableAdapters.wareHouseTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wareHouseBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eShopManagerDataSet)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnclear
+            // btnWareClear
             // 
-            this.btnclear.Location = new System.Drawing.Point(323, 321);
-            this.btnclear.Margin = new System.Windows.Forms.Padding(4);
-            this.btnclear.Name = "btnclear";
-            this.btnclear.Size = new System.Drawing.Size(76, 49);
-            this.btnclear.TabIndex = 53;
-            this.btnclear.Text = "Clear";
-            this.btnclear.UseVisualStyleBackColor = true;
+            this.btnWareClear.Location = new System.Drawing.Point(333, 341);
+            this.btnWareClear.Margin = new System.Windows.Forms.Padding(4);
+            this.btnWareClear.Name = "btnWareClear";
+            this.btnWareClear.Size = new System.Drawing.Size(76, 49);
+            this.btnWareClear.TabIndex = 53;
+            this.btnWareClear.Text = "Clear";
+            this.btnWareClear.UseVisualStyleBackColor = true;
             // 
-            // btndelete
+            // btnWareDelete
             // 
-            this.btndelete.Location = new System.Drawing.Point(323, 250);
-            this.btndelete.Margin = new System.Windows.Forms.Padding(4);
-            this.btndelete.Name = "btndelete";
-            this.btndelete.Size = new System.Drawing.Size(76, 49);
-            this.btndelete.TabIndex = 48;
-            this.btndelete.Text = "Delete";
-            this.btndelete.UseVisualStyleBackColor = true;
+            this.btnWareDelete.Location = new System.Drawing.Point(333, 270);
+            this.btnWareDelete.Margin = new System.Windows.Forms.Padding(4);
+            this.btnWareDelete.Name = "btnWareDelete";
+            this.btnWareDelete.Size = new System.Drawing.Size(76, 49);
+            this.btnWareDelete.TabIndex = 48;
+            this.btnWareDelete.Text = "Delete";
+            this.btnWareDelete.UseVisualStyleBackColor = true;
+            this.btnWareDelete.Click += new System.EventHandler(this.btnWareDelete_Click);
             // 
-            // btnsave
+            // btnWareUpdate
             // 
-            this.btnsave.Location = new System.Drawing.Point(226, 321);
-            this.btnsave.Margin = new System.Windows.Forms.Padding(4);
-            this.btnsave.Name = "btnsave";
-            this.btnsave.Size = new System.Drawing.Size(80, 49);
-            this.btnsave.TabIndex = 47;
-            this.btnsave.Text = "Save";
-            this.btnsave.UseVisualStyleBackColor = true;
+            this.btnWareUpdate.Location = new System.Drawing.Point(236, 341);
+            this.btnWareUpdate.Margin = new System.Windows.Forms.Padding(4);
+            this.btnWareUpdate.Name = "btnWareUpdate";
+            this.btnWareUpdate.Size = new System.Drawing.Size(80, 49);
+            this.btnWareUpdate.TabIndex = 47;
+            this.btnWareUpdate.Text = "Update";
+            this.btnWareUpdate.UseVisualStyleBackColor = true;
+            this.btnWareUpdate.Click += new System.EventHandler(this.btnWareUpdate_Click);
             // 
-            // btnadd
+            // btnWareAdd
             // 
-            this.btnadd.Location = new System.Drawing.Point(226, 250);
-            this.btnadd.Margin = new System.Windows.Forms.Padding(4);
-            this.btnadd.Name = "btnadd";
-            this.btnadd.Size = new System.Drawing.Size(77, 49);
-            this.btnadd.TabIndex = 46;
-            this.btnadd.Text = "Add";
-            this.btnadd.UseVisualStyleBackColor = true;
+            this.btnWareAdd.Location = new System.Drawing.Point(236, 270);
+            this.btnWareAdd.Margin = new System.Windows.Forms.Padding(4);
+            this.btnWareAdd.Name = "btnWareAdd";
+            this.btnWareAdd.Size = new System.Drawing.Size(77, 49);
+            this.btnWareAdd.TabIndex = 46;
+            this.btnWareAdd.Text = "Add";
+            this.btnWareAdd.UseVisualStyleBackColor = true;
+            this.btnWareAdd.Click += new System.EventHandler(this.btnWareAdd_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(25, 196);
+            this.label5.Location = new System.Drawing.Point(35, 216);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(86, 20);
@@ -101,36 +117,36 @@ namespace Final_Project_CNPM.MenuTab
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(25, 164);
+            this.label6.Location = new System.Drawing.Point(35, 184);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(114, 20);
             this.label6.TabIndex = 42;
             this.label6.Text = "Goods receipt";
             // 
-            // txtgiaban
+            // prdPriceOut
             // 
-            this.txtgiaban.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtgiaban.Location = new System.Drawing.Point(160, 192);
-            this.txtgiaban.Margin = new System.Windows.Forms.Padding(4);
-            this.txtgiaban.Name = "txtgiaban";
-            this.txtgiaban.Size = new System.Drawing.Size(239, 22);
-            this.txtgiaban.TabIndex = 41;
+            this.prdPriceOut.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.prdPriceOut.Location = new System.Drawing.Point(170, 212);
+            this.prdPriceOut.Margin = new System.Windows.Forms.Padding(4);
+            this.prdPriceOut.Name = "prdPriceOut";
+            this.prdPriceOut.Size = new System.Drawing.Size(239, 22);
+            this.prdPriceOut.TabIndex = 41;
             // 
-            // txtgianhap
+            // prdPriceIn
             // 
-            this.txtgianhap.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtgianhap.Location = new System.Drawing.Point(160, 159);
-            this.txtgianhap.Margin = new System.Windows.Forms.Padding(4);
-            this.txtgianhap.Name = "txtgianhap";
-            this.txtgianhap.Size = new System.Drawing.Size(239, 22);
-            this.txtgianhap.TabIndex = 40;
+            this.prdPriceIn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.prdPriceIn.Location = new System.Drawing.Point(170, 179);
+            this.prdPriceIn.Margin = new System.Windows.Forms.Padding(4);
+            this.prdPriceIn.Name = "prdPriceIn";
+            this.prdPriceIn.Size = new System.Drawing.Size(239, 22);
+            this.prdPriceIn.TabIndex = 40;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(25, 132);
+            this.label3.Location = new System.Drawing.Point(35, 152);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(71, 20);
@@ -141,30 +157,30 @@ namespace Final_Project_CNPM.MenuTab
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(24, 96);
+            this.label2.Location = new System.Drawing.Point(34, 116);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(116, 20);
             this.label2.TabIndex = 38;
             this.label2.Text = "Name Product";
             // 
-            // txtsl
+            // prdQuantity
             // 
-            this.txtsl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtsl.Location = new System.Drawing.Point(160, 127);
-            this.txtsl.Margin = new System.Windows.Forms.Padding(4);
-            this.txtsl.Name = "txtsl";
-            this.txtsl.Size = new System.Drawing.Size(239, 22);
-            this.txtsl.TabIndex = 36;
+            this.prdQuantity.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.prdQuantity.Location = new System.Drawing.Point(170, 147);
+            this.prdQuantity.Margin = new System.Windows.Forms.Padding(4);
+            this.prdQuantity.Name = "prdQuantity";
+            this.prdQuantity.Size = new System.Drawing.Size(239, 22);
+            this.prdQuantity.TabIndex = 36;
             // 
-            // txttensp
+            // prdName
             // 
-            this.txttensp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txttensp.Location = new System.Drawing.Point(160, 92);
-            this.txttensp.Margin = new System.Windows.Forms.Padding(4);
-            this.txttensp.Name = "txttensp";
-            this.txttensp.Size = new System.Drawing.Size(239, 22);
-            this.txttensp.TabIndex = 35;
+            this.prdName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.prdName.Location = new System.Drawing.Point(170, 112);
+            this.prdName.Margin = new System.Windows.Forms.Padding(4);
+            this.prdName.Name = "prdName";
+            this.prdName.Size = new System.Drawing.Size(239, 22);
+            this.prdName.TabIndex = 35;
             // 
             // dateTimePicker1
             // 
@@ -180,9 +196,17 @@ namespace Final_Project_CNPM.MenuTab
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.productIDDataGridViewTextBoxColumn,
+            this.productNameDataGridViewTextBoxColumn,
+            this.quantityDataGridViewTextBoxColumn,
+            this.priceInDataGridViewTextBoxColumn,
+            this.priceOutDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.wareHouseBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(460, 80);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
@@ -190,29 +214,109 @@ namespace Final_Project_CNPM.MenuTab
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(368, 359);
             this.dataGridView1.TabIndex = 54;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(34, 86);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(89, 20);
+            this.label1.TabIndex = 57;
+            this.label1.Text = "ID Product";
+            // 
+            // prdID
+            // 
+            this.prdID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.prdID.Location = new System.Drawing.Point(170, 82);
+            this.prdID.Margin = new System.Windows.Forms.Padding(4);
+            this.prdID.Name = "prdID";
+            this.prdID.Size = new System.Drawing.Size(239, 22);
+            this.prdID.TabIndex = 56;
+            // 
+            // productIDDataGridViewTextBoxColumn
+            // 
+            this.productIDDataGridViewTextBoxColumn.DataPropertyName = "productID";
+            this.productIDDataGridViewTextBoxColumn.HeaderText = "productID";
+            this.productIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.productIDDataGridViewTextBoxColumn.Name = "productIDDataGridViewTextBoxColumn";
+            this.productIDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // productNameDataGridViewTextBoxColumn
+            // 
+            this.productNameDataGridViewTextBoxColumn.DataPropertyName = "productName";
+            this.productNameDataGridViewTextBoxColumn.HeaderText = "productName";
+            this.productNameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.productNameDataGridViewTextBoxColumn.Name = "productNameDataGridViewTextBoxColumn";
+            this.productNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // quantityDataGridViewTextBoxColumn
+            // 
+            this.quantityDataGridViewTextBoxColumn.DataPropertyName = "quantity";
+            this.quantityDataGridViewTextBoxColumn.HeaderText = "quantity";
+            this.quantityDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.quantityDataGridViewTextBoxColumn.Name = "quantityDataGridViewTextBoxColumn";
+            this.quantityDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // priceInDataGridViewTextBoxColumn
+            // 
+            this.priceInDataGridViewTextBoxColumn.DataPropertyName = "priceIn";
+            this.priceInDataGridViewTextBoxColumn.HeaderText = "priceIn";
+            this.priceInDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.priceInDataGridViewTextBoxColumn.Name = "priceInDataGridViewTextBoxColumn";
+            this.priceInDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // priceOutDataGridViewTextBoxColumn
+            // 
+            this.priceOutDataGridViewTextBoxColumn.DataPropertyName = "priceOut";
+            this.priceOutDataGridViewTextBoxColumn.HeaderText = "priceOut";
+            this.priceOutDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.priceOutDataGridViewTextBoxColumn.Name = "priceOutDataGridViewTextBoxColumn";
+            this.priceOutDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // wareHouseBindingSource
+            // 
+            this.wareHouseBindingSource.DataMember = "wareHouse";
+            this.wareHouseBindingSource.DataSource = this.eShopManagerDataSet;
+            // 
+            // eShopManagerDataSet
+            // 
+            this.eShopManagerDataSet.DataSetName = "eShopManagerDataSet";
+            this.eShopManagerDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // wareHouseTableAdapter
+            // 
+            this.wareHouseTableAdapter.ClearBeforeFill = true;
             // 
             // WareHouse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(861, 476);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.prdID);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.btnclear);
-            this.Controls.Add(this.btndelete);
-            this.Controls.Add(this.btnsave);
-            this.Controls.Add(this.btnadd);
+            this.Controls.Add(this.btnWareClear);
+            this.Controls.Add(this.btnWareDelete);
+            this.Controls.Add(this.btnWareUpdate);
+            this.Controls.Add(this.btnWareAdd);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.txtgiaban);
-            this.Controls.Add(this.txtgianhap);
+            this.Controls.Add(this.prdPriceOut);
+            this.Controls.Add(this.prdPriceIn);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtsl);
-            this.Controls.Add(this.txttensp);
+            this.Controls.Add(this.prdQuantity);
+            this.Controls.Add(this.prdName);
             this.Name = "WareHouse";
             this.Text = "WareHouse";
+            this.Load += new System.EventHandler(this.WareHouse_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wareHouseBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eShopManagerDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -220,19 +324,29 @@ namespace Final_Project_CNPM.MenuTab
 
         #endregion
 
-        private System.Windows.Forms.Button btnclear;
-        private System.Windows.Forms.Button btndelete;
-        private System.Windows.Forms.Button btnsave;
-        private System.Windows.Forms.Button btnadd;
+        private System.Windows.Forms.Button btnWareClear;
+        private System.Windows.Forms.Button btnWareDelete;
+        private System.Windows.Forms.Button btnWareUpdate;
+        private System.Windows.Forms.Button btnWareAdd;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtgiaban;
-        private System.Windows.Forms.TextBox txtgianhap;
+        private System.Windows.Forms.TextBox prdPriceOut;
+        private System.Windows.Forms.TextBox prdPriceIn;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtsl;
-        private System.Windows.Forms.TextBox txttensp;
+        private System.Windows.Forms.TextBox prdQuantity;
+        private System.Windows.Forms.TextBox prdName;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox prdID;
+        private eShopManagerDataSet eShopManagerDataSet;
+        private System.Windows.Forms.BindingSource wareHouseBindingSource;
+        private eShopManagerDataSetTableAdapters.wareHouseTableAdapter wareHouseTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quantityDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn priceInDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn priceOutDataGridViewTextBoxColumn;
     }
 }
