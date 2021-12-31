@@ -80,3 +80,4 @@ D:\Deadline\FinalCNPM\Code\Final_Project_CNPM\Final_Project_CNPM\obj\Debug\Final
 D:\Deadline\FinalCNPM\Code\Final_Project_CNPM\Final_Project_CNPM\obj\Debug\Final_Project_CNPM.MenuTab.Product.resources
 D:\Deadline\FinalCNPM\Code\Final_Project_CNPM\Final_Project_CNPM\obj\Debug\Final_Project_CNPM.MenuTab.WareHouse.resources
 D:\Deadline\FinalCNPM\Code\Final_Project_CNPM\Final_Project_CNPM\bin\Debug\FontAwesome.Sharp.dll
+D:\Deadline\FinalCNPM\Code\Final_Project_CNPM\Final_Project_CNPM\obj\Debug\Final_Project_CNPM.csproj.AssemblyReference.cache

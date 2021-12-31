@@ -37,8 +37,7 @@ namespace Final_Project_CNPM
             this.password = new System.Windows.Forms.Label();
             this.usernameInput = new System.Windows.Forms.TextBox();
             this.passwordInput = new System.Windows.Forms.TextBox();
-            this.xuiButton1 = new XanderUI.XUIButton();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSubmit = new XanderUI.XUIButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -116,42 +115,33 @@ namespace Final_Project_CNPM
             this.passwordInput.Size = new System.Drawing.Size(198, 32);
             this.passwordInput.TabIndex = 6;
             // 
-            // xuiButton1
+            // btnSubmit
             // 
-            this.xuiButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.xuiButton1.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton1.ButtonImage")));
-            this.xuiButton1.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.xuiButton1.ButtonText = "Submit";
-            this.xuiButton1.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.xuiButton1.ClickTextColor = System.Drawing.Color.DodgerBlue;
-            this.xuiButton1.CornerRadius = 5;
-            this.xuiButton1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xuiButton1.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton1.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            this.xuiButton1.HoverTextColor = System.Drawing.Color.DodgerBlue;
-            this.xuiButton1.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton1.Location = new System.Drawing.Point(228, 387);
-            this.xuiButton1.Name = "xuiButton1";
-            this.xuiButton1.Size = new System.Drawing.Size(200, 50);
-            this.xuiButton1.TabIndex = 7;
-            this.xuiButton1.TextColor = System.Drawing.Color.DodgerBlue;
-            this.xuiButton1.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(413, 60);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSubmit.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnSubmit.ButtonImage = ((System.Drawing.Image)(resources.GetObject("btnSubmit.ButtonImage")));
+            this.btnSubmit.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.btnSubmit.ButtonText = "Submit";
+            this.btnSubmit.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.btnSubmit.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.btnSubmit.CornerRadius = 5;
+            this.btnSubmit.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubmit.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnSubmit.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.btnSubmit.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.btnSubmit.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.btnSubmit.Location = new System.Drawing.Point(228, 387);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(200, 50);
+            this.btnSubmit.TabIndex = 7;
+            this.btnSubmit.TextColor = System.Drawing.Color.DodgerBlue;
+            this.btnSubmit.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(902, 511);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.xuiButton1);
+            this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.passwordInput);
             this.Controls.Add(this.usernameInput);
             this.Controls.Add(this.password);
@@ -179,8 +169,7 @@ namespace Final_Project_CNPM
         private System.Windows.Forms.Label password;
         private System.Windows.Forms.TextBox usernameInput;
         private System.Windows.Forms.TextBox passwordInput;
-        private XanderUI.XUIButton xuiButton1;
-        private System.Windows.Forms.Button button1;
+        private XanderUI.XUIButton btnSubmit;
     }
 }
 

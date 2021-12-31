@@ -35412,7 +35412,7 @@
         nJ2Rj0PuRBdZaskR8KQkf//Z
 </value>
   </data>
-  <data name="xuiButton1.ButtonImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnSubmit.ButtonImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEBLAEsAAD/4QBKRXhpZgAATU0AKgAAAAgAAgEOAAIAAAAcAAAAJgESAAMAAAAB
         AAEAAAAAAABDbG9zZS11cCBvZiAiU3VibWl0IiBidXR0b24A/+IMWElDQ19QUk9GSUxFAAEBAAAMSExp
